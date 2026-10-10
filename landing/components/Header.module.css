@@ -1,0 +1,58 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(234, 227, 220, 0.85);
+  backdrop-filter: blur(10px);
+  padding: 16px 0;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.logo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.logoText { color: var(--text-color); }
+
+.logoSub {
+  flex-basis: 100%;
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: var(--text-light);
+}
+
+.nav {
+  display: none;
+  gap: 32px;
+  font-size: 0.9rem;
+}
+
+.nav a:hover { opacity: 0.7; }
+
+.ctaBtn {
+  background: var(--accent-color);
+  color: #fff;
+  padding: 10px 22px;
+  border-radius: 40px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .nav { display: flex; }
+  .logoSub { flex-basis: auto; margin-left: 8px; }
+}

@@ -1,0 +1,55 @@
+.footer {
+  padding: 60px 24px 80px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+.logoBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.logoText {
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+.logoSub {
+  font-size: 0.7rem;
+  color: var(--text-light);
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.85rem;
+}
+
+.col h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.col a {
+  color: var(--text-light);
+  transition: color 0.2s;
+}
+
+.col a:hover { color: var(--text-color); }
+
+.col p {
+  color: var(--text-light);
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    padding: 80px 8%;
+    gap: 40px;
+  }
+}
